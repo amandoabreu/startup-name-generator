@@ -1,0 +1,3 @@
+(() => {
+  //= require functions/hey.js
+})();
