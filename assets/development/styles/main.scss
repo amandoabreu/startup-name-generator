@@ -1,0 +1,63 @@
+@import 'includes/variables.scss';
+@import 'includes/btn.scss';
+body{
+  background: $color6;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.output-wrapper{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  width:75%;
+  float:left;
+}
+
+
+.form-group {
+  padding:5px 0;
+  overflow:hidden;
+  width:100%;
+  input{
+    float:right;
+    width:60px;
+  }
+}
+
+#main-form{
+  float:left;
+  width:25%;
+  box-sizing:border-box;
+  height:100vh;
+  overflow-y: scroll;
+  box-shadow: 2px 0px 12px -3px #999;
+  padding:15px;
+}
+
+#output{
+  font-family: "Courier new";
+  align-self:middle;
+  font-size:72px;
+  background-color: $color4;
+  border-radius: 12px;
+  padding:20px;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align:center;
+}
+
+.hidden{
+  display:none;
+}
+
+.visible{
+  display:block;
+}
+
+.advanced{
+
+}
+
+.description-title{
+  font-size:1.2em;
+}

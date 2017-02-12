@@ -16,6 +16,56 @@
 </head>
 
 <body>
+  <form id="main-form">
+  <div class="form-group">
+    <label for="letters">Number of letters</label>
+    <input name="letters" id="letters" value="5" />
+  </div>
+  <div class="form-group">
+    <label for="include-text">Include word</label>
+  <input type="text" name="include-text" id="include-text" placeholder="include"/>
+  </div>
+  <div class="form-group">
+    <button type="button" class="btn btn--no-style toggle show-advanced" data-toggle="#advanced-controls">Advanced</button>
+  </div>
+  <div class="advanced hidden" id="advanced-controls">
+  <div class="form-group include-locations">
+    <p class="description-title">Included word location</p>
+    <div class="include-location">
+      <label for="include-location">Random</label>
+      <input type="radio" id="include-start" selected value="0" name="include-location[]" />
+    </div>
+    <div class="include-location">
+      <label for="include-location">Start</label>
+      <input type="radio" id="include-start" value="1" name="include-location[]" />
+    </div>
+    <!--<div class="include-location">
+      <label for="include-location">Middle</label>
+      <input type="radio" id="include-center" value="2" name="include-location[]" />
+    </div>-->
+    <div class="include-location">
+      <label for="include-location">End</label>
+      <input type="radio" id="include-end" value="3" name="include-location[]"/>
+    </div>
+  </div>
+  <div id="pattern-checkboxes">
+    <p class="description-title">Letter control</p>
+    <p class="description">Tick for a consonant, leave unticked for a vowel, letters will be randomized in the pattern you choose. Leave everything unticked to alternate.</p>
+    <div id="checkbox-house">
+    </div>
+  </div>
+  <div id="tld-checkboxes">
+    <p class="description-title">TLD control</p>
+    <p class="description">Select the TLD(s) you want, leave blank for random</p>
+    <div id="tld-house">
+    </div>
+  </div>
+</div>
+  <input type="submit" value="generate" class="btn btn--main"/>
+</form>
+<div class="output-wrapper">
+<div id="output">startupname.io</div>
+</div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

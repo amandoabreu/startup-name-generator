@@ -1,0 +1,24 @@
+.btn{
+  border:1px solid #ebeced;
+  padding:15px;
+  color:white;
+  border-radius:12px;
+  outline:none;
+  text-decoration:underline;
+  background:transparent;
+  &:focus, &hover{
+    outline:none;
+    border:none;
+  }
+  &:hover{
+    text-decoration:none;
+  }
+  &--main{
+    background: $color5;
+  }
+  &--no-style{
+    border:none;
+    color:black;
+    padding:0;
+  }
+}
