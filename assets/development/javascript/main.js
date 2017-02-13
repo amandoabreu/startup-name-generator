@@ -27,10 +27,11 @@
     for(let i = 0; i < num;i++){
       pattern[i] = false;
       checkboxHouse.innerHTML += '<input type="checkbox" name="letter-type[]" class="letter-type" //>';
-      letterTypes = document.getElementsByName('letter-type[]');
-      for(let i = 0; i < letterTypes.length;i++){
-        letterTypes[i].addEventListener('change', updatePattern);
-      }
+
+    }
+    letterTypes = document.getElementsByName('letter-type[]');
+    for(let i = 0; i < letterTypes.length;i++){
+      letterTypes[i].addEventListener('change', updatePattern);
     }
   };
 
@@ -69,7 +70,7 @@
     'A job listing startup',
     'A hotel metasearch',
     'A food delivery app',
-    'A "tinder-like" dating app'
+    'A "tinder-like" app for X'
   ];
 
   const allFalse = (array) => {

@@ -31,10 +31,10 @@
     for (var _i2 = 0; _i2 < num; _i2++) {
       pattern[_i2] = false;
       checkboxHouse.innerHTML += '<input type="checkbox" name="letter-type[]" class="letter-type" //>';
-      letterTypes = document.getElementsByName('letter-type[]');
-      for (var _i3 = 0; _i3 < letterTypes.length; _i3++) {
-        letterTypes[_i3].addEventListener('change', updatePattern);
-      }
+    }
+    letterTypes = document.getElementsByName('letter-type[]');
+    for (var _i3 = 0; _i3 < letterTypes.length; _i3++) {
+      letterTypes[_i3].addEventListener('change', updatePattern);
     }
   };
 
@@ -66,7 +66,7 @@
 
   var include = undefined;
 
-  var descriptions = ['A job listing startup', 'A hotel metasearch', 'A food delivery app', 'A "tinder-like" dating app'];
+  var descriptions = ['A job listing startup', 'A hotel metasearch', 'A food delivery app', 'A "tinder-like" app for X'];
 
   var allFalse = function allFalse(array) {
     var first = array[0];
